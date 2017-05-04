@@ -1,6 +1,6 @@
 class Message {
             
-    public logMessage(str:string):void {
+    public static logMessage(str:string):void {
         console.log(str);
     }
  

@@ -1,14 +1,21 @@
-class Driver {
-            
-    private div:HTMLElement;
-            
-    constructor() {
-        this.div = document.createElement("driver");
-        document.body.appendChild(this.div);
+/// <reference path="gameObject.ts" />
 
-        this.div.style.transform ="translate(200px,100px)";
+class Driver extends GameObject 
+{
+    private fuel: number;
+            
+    constructor(x: number, y: number) {
+        super(x, y, "driver");
 
-        let m:Message = new Message();
-        m.logMessage("Created a driver!");
+        Message.logMessage("Created a driver!");
+    }
+
+    public update()
+    {
+    }
+
+    public draw()
+    {
+        super.draw();
     }
 }
